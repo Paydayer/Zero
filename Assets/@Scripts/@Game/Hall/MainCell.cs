@@ -9,7 +9,7 @@ public class MainCell : MonoBehaviour
 
     private void Start()
     {
-        Show();
+       // Show();
     }
 
     public void Show()

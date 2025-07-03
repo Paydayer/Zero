@@ -9,9 +9,9 @@ public class MainPanel : AView
     public Transform obj;
     protected override void OnEnable()
     {
-       Debug.Log("11111");
-       Debug.Log(transform.GetComponent<MainPanel>());
-       Debug.Log(obj.name);
+       Debug.Log("11111222");
        Image.Show();
+       //Debug.Log(transform.GetComponent<MainPanel>());
+       Debug.Log(obj.name);
     }
 }

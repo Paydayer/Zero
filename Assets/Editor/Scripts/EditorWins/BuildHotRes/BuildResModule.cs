@@ -8,6 +8,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading;
+using HybridCLR.Editor;
+using HybridCLR.Editor.Commands;
 using UnityEditor;
 using UnityEngine;
 using Zero;
@@ -63,6 +65,7 @@ namespace ZeroEditor
                     BuildDll(() =>
                         {
                             Debug.Log("DLL发布成功");
+                            MyBuildDll();
                             BuildPart2();
                         },
                         () =>
@@ -85,8 +88,29 @@ namespace ZeroEditor
                 throw;
             }
         }
+        
+        void MyBuildDll()
+        {
+            BuildTarget target = EditorUserBuildSettings.activeBuildTarget;
+            CompileDllCommand.CompileDll(target);
+            CopyHotUpdateAssembliesToStreamingAssets();
+        }
 
+        public static void CopyHotUpdateAssembliesToStreamingAssets()
+        {
+            var target = EditorUserBuildSettings.activeBuildTarget;
 
+            string hotfixDllSrcDir = SettingsUtil.GetHotUpdateDllsOutputDirByTarget(target);
+            string hotfixAssembliesDstDir = Application.streamingAssetsPath;
+            foreach (var dll in SettingsUtil.HotUpdateAssemblyFilesExcludePreserved)
+            {
+                string dllPath = $"{hotfixDllSrcDir}/{dll}";
+                string dllBytesPath = FileUtility.CombinePaths(ZeroEditorConst.DLL_PUBLISH_DIR, ZeroConst.DLL_FILE_NAME + ".dll.bytes");
+                File.Copy(dllPath, dllBytesPath, true);
+                Debug.Log($"[CopyHotUpdateAssembliesToStreamingAssets] copy hotfix dll {dllPath} -> {dllBytesPath}");
+            }
+        }
+        
         [LabelText("发布完成后打开发布目录"), ToggleLeft, PropertyOrder(800)]
         [InlineButton("OpenPublishDir", "打开发布目录")]
         public bool isOpenPublishDir = true;

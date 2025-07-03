@@ -16,13 +16,12 @@ MonoBehaviour:
   useGlobalIl2cpp: 0
   hybridclrRepoURL: https://gitee.com/focus-creative-games/hybridclr
   il2cppPlusRepoURL: https://gitee.com/focus-creative-games/il2cpp_plus
-  hotUpdateAssemblyDefinitions: []
-  hotUpdateAssemblies:
-  - scripts
+  hotUpdateAssemblyDefinitions:
+  - {fileID: 5897886265953266890, guid: e7aa6036709144a469dc255be7e2bbbe, type: 3}
+  hotUpdateAssemblies: []
   preserveHotUpdateAssemblies: []
   hotUpdateDllCompileOutputRootDir: HybridCLRData/HotUpdateDlls
-  externalHotUpdateAssembliyDirs:
-  - LibraryZero/ReleaseCache/dll
+  externalHotUpdateAssembliyDirs: []
   strippedAOTDllOutputRootDir: HybridCLRData/AssembliesPostIl2CppStrip
   patchAOTAssemblies: []
   outputLinkFile: HybridCLRGenerate/link.xml

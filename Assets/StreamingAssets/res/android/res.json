@@ -1,5 +1,5 @@
 {
-  "identifier": "844C7B3D8CEC90791274D8B56F2932EB",
+  "identifier": "BA39C3A10C8C16C2456546A1AD31A788",
   "items": [
     {
       "name": "setting.json",
@@ -13,18 +13,18 @@
     },
     {
       "name": "ab/manifest.ab",
-      "version": "730b5379316a434e24dda567e7188ea1",
+      "version": "e3d52021120515d5eaedec3a9e105ab6",
       "size": 1715
     },
     {
       "name": "ab/prefab.ab",
-      "version": "e36cde15b2b66be9215faa9f5afa9b91",
-      "size": 3914
+      "version": "41e3afce7c9d92ea9656addb2155ec27",
+      "size": 3911
     },
     {
       "name": "ab/root_assets.ab",
-      "version": "63f0ab19eb194e3d6df977ef82dd2f7a",
-      "size": 7680
+      "version": "c60d2480608b38c37bbfad570cf03071",
+      "size": 7684
     },
     {
       "name": "ab/scenes.ab",
@@ -33,18 +33,23 @@
     },
     {
       "name": "ab/appends/shaders.ab",
-      "version": "5c53ed4196a3524c17499dd1a046ff2c",
-      "size": 164718
+      "version": "149f0b332e948d5d152235bb1036aa5f",
+      "size": 163314
     },
     {
-      "name": "dll/scripts.dll",
-      "version": "831d37739b07c8ecbd516013166333dd",
-      "size": 61966
+      "name": "dll/Scripts.dll",
+      "version": "76b1f09f379252ca7e4738c5ac41a5d4",
+      "size": 81934
     },
     {
-      "name": "dll/scripts.pdb",
-      "version": "11689a64cf9f53bead567ec8d0e62acf",
-      "size": 33396
+      "name": "dll/Scripts.dll.bytes",
+      "version": "2bb3424636e206a7842d0e453ac523f4",
+      "size": 81408
+    },
+    {
+      "name": "dll/Scripts.pdb",
+      "version": "d53e351a49b643e235933601a81c8165",
+      "size": 40992
     },
     {
       "name": "files/privacy_policy.txt",
