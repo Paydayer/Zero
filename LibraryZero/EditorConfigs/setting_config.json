@@ -1,0 +1,19 @@
+﻿{
+  "client": {
+    "version": "0.1",
+    "url": "https://zxcdkj.oss-cn-hangzhou.aliyuncs.com/cyl_pokerland"
+  },
+  "netResRoot": "",
+  "startupResGroups": [
+    "/"
+  ],
+  "startupParams": {},
+  "lsLogEnable": {
+    "isOverride": false,
+    "value": false
+  },
+  "lsUseDll": {
+    "isOverride": false,
+    "value": false
+  }
+}

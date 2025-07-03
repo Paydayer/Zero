@@ -1,0 +1,19 @@
+{
+  "client": {
+    "version": "0.1",
+    "url": "http://www.baidu.com"
+  },
+  "netResRoot": "",
+  "startupResGroups": [
+    "/"
+  ],
+  "startupParams": {},
+  "lsLogEnable": {
+    "isOverride": false,
+    "value": false
+  },
+  "lsUseDll": {
+    "isOverride": false,
+    "value": false
+  }
+}

@@ -1,0 +1,19 @@
+﻿{
+  "isTextureOptimizeEnable": true,
+  "textureSettings": [],
+  "isAudioOptimizeEnable": true,
+  "audioSettings": [
+    {
+      "folder": "Assets/@Resources/examples/audios",
+      "forceToMono": false,
+      "loadInBackground": false,
+      "preloadAudioData": true,
+      "loadType": 0,
+      "compressionFormat": 1,
+      "quality": 100
+    }
+  ],
+  "rClassAutoGenerateSetting": {
+    "isAutoGenerateEnable": true
+  }
+}

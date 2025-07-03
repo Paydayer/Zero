@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 4246110629
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: root_assets.ab
+      Dependencies: {}
+    Info_1:
+      Name: commons.ab
+      Dependencies: {}
+    Info_2:
+      Name: prefab.ab
+      Dependencies: {}
+    Info_3:
+      Name: scenes.ab
+      Dependencies: {}
+    Info_4:
+      Name: appends/shaders.ab
+      Dependencies: {}

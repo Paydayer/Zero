@@ -1,0 +1,40 @@
+﻿{
+  "abList": [
+    {
+      "explain": "@ab根目录下资源",
+      "assetbundle": "root_assets.ab",
+      "assetList": [
+        "ILContent.prefab"
+      ]
+    },
+    {
+      "explain": null,
+      "assetbundle": "commons.ab",
+      "assetList": [
+        "MsgWin.prefab"
+      ]
+    },
+    {
+      "explain": null,
+      "assetbundle": "Prefab.ab",
+      "assetList": [
+        "MainPanel.prefab"
+      ]
+    },
+    {
+      "explain": null,
+      "assetbundle": "scenes.ab",
+      "assetList": [
+        "Scene0.unity",
+        "Scene1.unity"
+      ]
+    }
+  ],
+  "viewClassNamespaceList": [
+    "Roushan.",
+    "ZeroGameKit.",
+    "Example.",
+    "Sokoban.",
+    "Knight."
+  ]
+}

@@ -1,0 +1,177 @@
+﻿//该类由 [Zero → 自动生成代码 → Assets资源名生成] 工具通过模版文件自动创建
+
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using Jing;
+
+namespace Zero
+{
+    /// <summary>
+    /// [自动生成的]资源路径
+    /// </summary>
+    public static class [CLASS NAME]
+    {
+        #region 热更文件(files)下的资源路径
+        [FIELD LIST]
+
+        #endregion      
+
+        #region 热更AssetBundle(ab)下的资源路径
+        [FIELD LIST]
+
+        #endregion
+                
+        #region 热更AssetBundle(ab)下的AB文件资源路径
+        
+        /*[FIELD LIST]        
+        */
+        
+        #endregion
+
+        /// <summary>
+        /// @files下文件的名字到路径的映射表
+        /// </summary>
+        private static readonly Dictionary<string, string> FileNameToPathDict = new Dictionary<string, string>();
+
+        /// <summary>
+        /// @ab下文件的名字到路径的映射表
+        /// </summary>
+        private static readonly Dictionary<string, string> AssetNameToPathDict = new Dictionary<string, string>();
+
+        /// <summary>
+        /// 有重名的文件，对应的路径列表
+        /// </summary>
+        private static readonly Dictionary<string, List<string>> DuplicateNameToPathListDict = new Dictionary<string, List<string>>();
+
+        static R()
+        {
+            #region 构建文件名到路径的映射
+
+            var fields = typeof(R).GetFields(BindingFlags.Public | BindingFlags.Static);
+            foreach (var field in fields)
+            {
+                if (field.IsLiteral && !field.IsInitOnly)
+                {
+                    var path = (string)field.GetValue(null);
+
+                    var name = Path.GetFileName(path).ToLower();
+
+                    if (path.StartsWith(ZeroConst.PROJECT_FILES_DIR))
+                    {
+                        //@files下的文件
+                        AddNameToDict(name, path, FileNameToPathDict);
+                    }
+                    else if (path.StartsWith(ZeroConst.PROJECT_AB_DIR))
+                    {
+                        //@ab下的资源
+                        AddNameToDict(name, path, AssetNameToPathDict);
+                    }
+                }
+            }
+
+            #endregion
+
+            void AddNameToDict(string name, string path, Dictionary<string, string> dict)
+            {
+                if (false == dict.TryAdd(name, path))
+                {
+                    if (DuplicateNameToPathListDict.TryGetValue(name, out var list))
+                    {
+                        list.Add(path);
+                    }
+                    else
+                    {
+                        DuplicateNameToPathListDict.Add(name, new List<string> { path });
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// 通过文件名获取资源路径
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public static string GetPath(string fileName, EResType type = EResType.Unknown)
+        {
+            var name = fileName.ToLower();
+            if (type == EResType.File || type == EResType.Unknown)
+            {
+                if (FileNameToPathDict.TryGetValue(name, out var path))
+                {
+                    return path;
+                }
+            }
+
+            if (type == EResType.Asset || type == EResType.Unknown)
+            {
+                if (AssetNameToPathDict.TryGetValue(name, out var path))
+                {
+                    return path;
+                }
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// 通过起始路径查找所有匹配的资源
+        /// </summary>
+        /// <param name="startPath"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public static string[] Find(string startPath, EResType type = EResType.Unknown)
+        {
+            List<string> list = new List<string>();
+
+            if (EResType.Unknown == type || EResType.File == type)
+            {
+                var fileStartPath = Res.TransformToProjectPath(startPath, EResType.File);
+                foreach (var filePath in FileNameToPathDict.Values)
+                {
+                    if (filePath.StartsWith(fileStartPath))
+                    {
+                        list.Add(filePath);
+                    }
+                }
+            }
+
+            if (EResType.Unknown == type || EResType.Asset == type)
+            {
+                var assetStartPath = Res.TransformToProjectPath(startPath, EResType.Asset);
+                foreach (var filePath in AssetNameToPathDict.Values)
+                {
+                    if (filePath.StartsWith(assetStartPath))
+                    {
+                        list.Add(filePath);
+                    }
+                }
+            }
+
+            return list.ToArray();
+        }
+
+        /// <summary>
+        /// 所有的文件资源
+        /// </summary>
+        /// <returns></returns>
+        public static string[] AllFiles()
+        {
+            return FileNameToPathDict.Values.ToArray();
+        }
+
+        /// <summary>
+        /// 所有的AB中的资源
+        /// </summary>
+        /// <returns></returns>
+        public static string[] AllAssets()
+        {
+            return AssetNameToPathDict.Values.ToArray();
+        }        
+    }    
+}
+------------------------------Split--------------------------------
+        public const string [FIELD NAME] = "[FIELD VALUE]";
