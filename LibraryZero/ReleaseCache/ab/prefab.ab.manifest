@@ -1,24 +1,34 @@
 ManifestFileVersion: 0
-CRC: 2481784966
+CRC: 3435455703
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ddd96d4cad5b05eae0e68d5ac482d008
+    Hash: 375a2df97fe2993b26160a2edc670e5c
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 6da7fe3852ff2cc8f889a23bb81ebfca
+    Hash: aa837f703bb2f39ecbf0b407c14c516b
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: ddd96d4cad5b05eae0e68d5ac482d008
+    Hash: 375a2df97fe2993b26160a2edc670e5c
 HashAppended: 0
 ClassTypes:
 - Class: 1
   Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
 - Class: 114
-  Script: {fileID: 11500000, guid: 600461b82670f8242b95405d8b6e541d, type: 3}
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 600461b82670f8242b95405d8b6e541d, type: 3}
 - Class: 115
+  Script: {instanceID: 0}
+- Class: 128
   Script: {instanceID: 0}
 - Class: 222
   Script: {instanceID: 0}
@@ -27,6 +37,8 @@ ClassTypes:
 SerializeReferenceClassIdentifiers:
 - AssemblyName: UnityEngine.CoreModule
   ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.FontData
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
 Assets:

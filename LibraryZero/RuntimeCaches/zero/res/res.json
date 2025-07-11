@@ -1,5 +1,5 @@
 {
-  "identifier": "0B151D2A9D6F59490D09AEC80CC654E3",
+  "identifier": "F0C96E41751AC85EFC0FFF495E32259D",
   "items": [
     {
       "name": "setting.json",
@@ -8,43 +8,48 @@
     },
     {
       "name": "ab/commons.ab",
-      "version": "58409b7aeb3e7c6eff06b503979c0581",
-      "size": 1387687
+      "version": "08e905870e16bf38de5ee693041c1977",
+      "size": 6116
     },
     {
       "name": "ab/manifest.ab",
-      "version": "1a7af17c10566156cee33395175fd86b",
-      "size": 1719
+      "version": "e3d52021120515d5eaedec3a9e105ab6",
+      "size": 1715
     },
     {
       "name": "ab/prefab.ab",
-      "version": "e36cde15b2b66be9215faa9f5afa9b91",
-      "size": 3914
+      "version": "41e3afce7c9d92ea9656addb2155ec27",
+      "size": 3911
     },
     {
       "name": "ab/root_assets.ab",
-      "version": "63f0ab19eb194e3d6df977ef82dd2f7a",
-      "size": 7680
+      "version": "c60d2480608b38c37bbfad570cf03071",
+      "size": 7684
     },
     {
       "name": "ab/scenes.ab",
-      "version": "f4a23a2ceef44359e71d375f06c936d6",
-      "size": 71187
+      "version": "96f47e4f5d4c2a558a839a6442418b73",
+      "size": 68410
     },
     {
       "name": "ab/appends/shaders.ab",
-      "version": "5c53ed4196a3524c17499dd1a046ff2c",
-      "size": 164718
+      "version": "149f0b332e948d5d152235bb1036aa5f",
+      "size": 163314
     },
     {
-      "name": "dll/scripts.dll",
-      "version": "4fcd9f8306d74db393e82c1cbb16bc9d",
-      "size": 29710
+      "name": "dll/Scripts.dll",
+      "version": "5b17767b5d81fb1fe94a920084934f79",
+      "size": 81934
     },
     {
-      "name": "dll/scripts.pdb",
-      "version": "05ada44e5e800d286559a2f4bbfa64a2",
-      "size": 32676
+      "name": "dll/Scripts.dll.bytes",
+      "version": "a55f8887f25c8d775e54a78ee0f7d496",
+      "size": 81408
+    },
+    {
+      "name": "dll/Scripts.pdb",
+      "version": "3c55cb56193304429916d4c4463acc9b",
+      "size": 41040
     },
     {
       "name": "files/privacy_policy.txt",

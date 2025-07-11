@@ -2082,7 +2082,7 @@ MonoBehaviour:
   data:
     isLogEnable: 1
     isUseAssetBundle: 1
-    isHotPatchEnable: 0
+    isHotPatchEnable: 1
     urlRoots:
     - https://zxcdkj.oss-cn-hangzhou.aliyuncs.com/cyl_pokerland
     isOfflineEnable: 0

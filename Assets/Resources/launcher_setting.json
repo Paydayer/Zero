@@ -1,7 +1,7 @@
 {
   "isLogEnable": true,
   "isUseAssetBundle": true,
-  "isHotPatchEnable": false,
+  "isHotPatchEnable": true,
   "urlRoots": [
     "https://zxcdkj.oss-cn-hangzhou.aliyuncs.com/cyl_pokerland"
   ],

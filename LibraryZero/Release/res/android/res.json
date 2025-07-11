@@ -1,5 +1,5 @@
 {
-  "identifier": "BA39C3A10C8C16C2456546A1AD31A788",
+  "identifier": "785A8324E2672377A8D325BA2AF0893C",
   "items": [
     {
       "name": "setting.json",
@@ -13,13 +13,13 @@
     },
     {
       "name": "ab/manifest.ab",
-      "version": "e3d52021120515d5eaedec3a9e105ab6",
+      "version": "ef26008bea7dffecfdfacb55923d9c17",
       "size": 1715
     },
     {
       "name": "ab/prefab.ab",
-      "version": "41e3afce7c9d92ea9656addb2155ec27",
-      "size": 3911
+      "version": "d728163e39b61662178ad155ff4a2be6",
+      "size": 4538
     },
     {
       "name": "ab/root_assets.ab",
@@ -38,18 +38,18 @@
     },
     {
       "name": "dll/Scripts.dll",
-      "version": "76b1f09f379252ca7e4738c5ac41a5d4",
+      "version": "f90588a32fe63a6638630ef93f5a87ab",
       "size": 81934
     },
     {
       "name": "dll/Scripts.dll.bytes",
-      "version": "2bb3424636e206a7842d0e453ac523f4",
+      "version": "77e662b832c1cb9e2a7f8b5d9eaeb7d5",
       "size": 81408
     },
     {
       "name": "dll/Scripts.pdb",
-      "version": "d53e351a49b643e235933601a81c8165",
-      "size": 40992
+      "version": "fa7578c4cb3793a9fb6f971655d276bb",
+      "size": 41048
     },
     {
       "name": "files/privacy_policy.txt",
